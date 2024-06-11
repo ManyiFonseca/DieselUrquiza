@@ -65,6 +65,7 @@ class BombaController extends Controller
      */
     public function destroy(bomba $bomba)
     {
-        //
+        $bomba->delete();
+        return redirect()->route('bombas.index');
     }
 }
