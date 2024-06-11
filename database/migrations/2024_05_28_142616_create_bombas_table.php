@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bombas', function (Blueprint $table) {
             $table->id();
-            $table->string('Modelo');
+            $table->string('modelo');
             $table->text('descripcion')->nullable();
             $table->integer('precio');
             $table->integer('stock');

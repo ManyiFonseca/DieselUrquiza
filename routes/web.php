@@ -18,4 +18,4 @@ use App\Http\Controllers\BombaController;
 Route::view('/', 'welcome');
 
 //CRUD de Bombas   
-Route::resource('Bombas', BombaController::class);// crear 7 rutas para CRUD 
+Route::resource('bombas', BombaController::class);// crear 7 rutas para CRUD 

@@ -6,7 +6,7 @@
         <div class="card w-96 shadow-2xl bg-base-100">
             <div class="card-body">
                 {{-- Formulario para crear un producto --}}
-                <form action="{{ route( 'Bombas.store' )}}" method="POST">
+                <form action="{{ route( 'bombas.store' )}}" method="POST">
                     @csrf
                      {{-- Modelo --}}
                         <div class="form-control">
@@ -39,7 +39,7 @@
                     {{-- Botón de enviar--}}
                         <div class="form-control mt-6">
                          <button type="submit" class="btn btn-primary">Crear Producto</button>
-                         <a href="{{ route('Bombas.index') }}" class="btn btn-outline btn-primary mt-4">Cancelar</a>
+                         <a href="{{ route('bombas.index') }}" class="btn btn-outline btn-primary mt-4">Cancelar</a>
                         </div>
                 </form>
             </div>

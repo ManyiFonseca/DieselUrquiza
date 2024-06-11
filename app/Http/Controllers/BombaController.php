@@ -13,7 +13,7 @@ class BombaController extends Controller
     public function index()
     {
         $bombas = bomba::all();
-        return view('Bombas.index', compact('bombas'));
+        return view('bombas.index', compact('bombas'));
     }
 
     /**
@@ -21,7 +21,7 @@ class BombaController extends Controller
      */
     public function create()
     {
-        return view('Bombas.create');
+        return view('bombas.create');
     }
 
     /**
@@ -31,7 +31,7 @@ class BombaController extends Controller
     {
         //dd($request->all());
         bomba::create($request->all());
-        return redirect()->route('Bombas.index');
+        return redirect()->route('bombas.index');
     }
 
     /**
@@ -47,7 +47,7 @@ class BombaController extends Controller
      */
     public function edit(bomba $bomba)
     {
-         return view('Bombas.edit', compact('bomba'));   
+         return view('bombas.edit', compact('bomba'));   
     }
       
 
@@ -58,7 +58,7 @@ class BombaController extends Controller
      public function update(Request $request, bomba $bomba)
     {
         $bomba->update($request->all());
-        return redirect()->route('Bombas.index');
+        return redirect()->route('bombas.index');
     }
     /**
      * Remove the specified resource from storage.

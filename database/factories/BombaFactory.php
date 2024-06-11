@@ -17,7 +17,7 @@ class BombaFactory extends Factory
     public function definition(): array
     {
         return [
-            'Modelo' => fake()->word(),
+            'modelo' => fake()->word(),
             'descripcion'=> fake()->text(),
             'precio' => fake()->numberBetween(50000, 100000),
             'stock' =>fake()->numberBetween(1, 100),

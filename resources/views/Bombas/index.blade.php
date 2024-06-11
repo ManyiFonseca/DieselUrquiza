@@ -5,13 +5,13 @@
     @foreach ($bombas as $bomba)
 
           <div class="card w-65 bg-base-100 shadow-xl image-full">
-          <figure><img src="https://source.unsplash.com/random/800x600/?auto spare parts&{{ $bomba->Modelo }}" alt="{{ $bomba->Modelo }}" /></figure>
+          <figure><img src="https://source.unsplash.com/random/800x600/?auto&{{ $bomba->modelo }}" alt="{{ $bomba->modelo }}" /></figure>
        <div class="card-body">
        <h2 class="card-title">${{$bomba->precio }}</h2>
         <div class="badge badge-outline"> Stock:{{$bomba->stock}}</div>
        <p>{{ Str::limit($bomba->descripción,30)}}</p>
      <div class="card-actions justify-end">
-       <button class="btn btn-primary">{{$bomba->Modelo }}</button>
+       <button class="btn btn-primary">{{$bomba->modelo }}</button>
       </div>
        </div>
       </div>
